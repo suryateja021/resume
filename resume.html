@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryateja Ramgongolla - Resume</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --text-color: #333333;
+            --secondary-text: #555555;
+            --font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --accent-color: #3498db;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 2rem;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 3rem 4rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .contact-info {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-info a {
+            color: var(--secondary-text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            color: var(--primary-color);
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 0.3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        p {
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+            text-align: justify;
+        }
+
+        .item {
+            margin-bottom: 1rem;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.3rem;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.05rem;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            color: var(--secondary-text);
+            font-size: 0.95rem;
+        }
+
+        .item-meta {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 0.8rem;
+        }
+
+        ul.bullet-list {
+            list-style-type: disc;
+            padding-left: 1.2rem;
+        }
+
+        ul.bullet-list li {
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.5rem;
+        }
+
+        .skill-item {
+            font-size: 0.95rem;
+        }
+
+        .skill-item strong {
+            display: inline-block;
+            width: 200px;
+        }
+
+        /* Print Specific Styles */
+        @media print {
+            body {
+                background-color: #ffffff;
+                padding: 0;
+            }
+
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+
+            @page {
+                margin: 1.5cm;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>Suryateja Ramgongolla</h1>
+            <div class="contact-info">
+                <span>suryatejaofficial021@gmail.com</span>
+                <span>+91-9492004002</span>
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="#">LeetCode</a>
+                <a href="#">Portfolio</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <p>Computer Science undergraduate with hands-on experience building full-stack web applications and REST
+                APIs using React, TypeScript, Python, FastAPI, PostgreSQL, and modern development tools. Strong
+                foundation in Data Structures, Object-Oriented Programming, DBMS, Operating Systems, and Computer
+                Networks. Developed projects involving authentication, payments, real-time communication, API
+                development, pagination, and data visualization. Seeking Software Developer, Full-Stack Developer, or
+                Web Developer internship opportunities.</p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">B.Tech – Computer Science</span>
+                    <span class="item-meta">2023 – 2027</span>
+                </div>
+                <div class="item-header">
+                    <span class="item-subtitle">CMR Engineering College</span>
+                    <span class="item-meta">Score: 70%</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Intermediate (MPC)</span>
+                    <span class="item-meta">2023</span>
+                </div>
+                <div class="item-header">
+                    <span class="item-subtitle">Narayana Junior College</span>
+                    <span class="item-meta">Score: 85%</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">SSC</span>
+                    <span class="item-meta">2021</span>
+                </div>
+                <div class="item-header">
+                    <span class="item-subtitle">Vijetha High School, Narayankhed</span>
+                    <span class="item-meta">Score: 100%</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item"><strong>Programming Languages:</strong> Python, Java, JavaScript, TypeScript,
+                    SQL</div>
+                <div class="skill-item"><strong>Frontend Development:</strong> React.js, HTML5, CSS3, Responsive Web
+                    Design, React Router</div>
+                <div class="skill-item"><strong>Backend Development:</strong> FastAPI, RESTful APIs, SQLAlchemy,
+                    Authentication & Authorization</div>
+                <div class="skill-item"><strong>Databases:</strong> PostgreSQL, SQL, Database Design, Query Optimization
+                </div>
+                <div class="skill-item"><strong>CS Fundamentals:</strong> Data Structures & Algorithms, OOP, DBMS,
+                    Operating Systems, Computer Networks</div>
+                <div class="skill-item"><strong>Software Engineering:</strong> Git, GitHub, Debugging, Testing, API
+                    Integration, Error Handling, Version Control</div>
+                <div class="skill-item"><strong>DevOps & Deployment:</strong> Linux, Docker, CI/CD Fundamentals, Cloud
+                    Deployment</div>
+                <div class="skill-item"><strong>Tools & Technologies:</strong> VS Code, Linux (Basic Commands), MS
+                    Office, Code Optimization (Basic)</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Projects</h2>
+
+            <div class="item">
+                <div class="item-title">
+                    LearnIt – Full-Stack Tutor Marketplace
+                    <span style="font-weight:400; font-size:0.9rem; margin-left:8px;">
+                        <a href="https://github.com/suryateja021/project-tutor" target="_blank"
+                            style="color: #3498db; text-decoration: none;">GitHub ↗</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://learnonline-alpha.vercel.app/" target="_blank"
+                            style="color: #3498db; text-decoration: none;">Live Demo ↗</a>
+                    </span>
+                </div>
+                <ul class="bullet-list">
+                    <li>Developed a full-stack tutor marketplace connecting students with verified tutors for online and
+                        offline learning.</li>
+                    <li>Implemented secure authentication, real-time chat, booking management, and Razorpay payment
+                        integration using React, TypeScript, Supabase, and PostgreSQL.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-title">
+                    TradeX AI – AI-Powered Financial Intelligence Platform
+                    <span style="font-weight:400; font-size:0.9rem; margin-left:8px;">
+                        <a href="https://github.com/suryateja021/automachine" target="_blank"
+                            style="color: #3498db; text-decoration: none;">GitHub ↗</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://automachine-seven.vercel.app/" target="_blank"
+                            style="color: #3498db; text-decoration: none;">Live Demo ↗</a>
+                    </span>
+                </div>
+                <ul class="bullet-list">
+                    <li>Built a responsive financial intelligence platform with interactive market dashboards,
+                        watchlists, and data visualization.</li>
+                    <li>Developed using Next.js, React, TypeScript, and Tailwind CSS with an AI-ready architecture.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-title"><a
+                        href="https://github.com/suryateja021/FastAPI-product-browser-BACKEND-project" target="_blank"
+                        style="color: inherit; text-decoration: none;">FastAPI Product Browser API ↗</a></div>
+                <ul class="bullet-list">
+                    <li>Developed a high-performance REST API using FastAPI and PostgreSQL to serve and filter over
+                        200,000 product records.</li>
+                    <li>Designed and implemented cursor-based pagination, category filtering, and interactive Swagger
+                        API documentation.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Academic Projects</h2>
+            <ul class="bullet-list">
+                <li><strong>Python Applications:</strong> Developed small programs such as calculators, number systems,
+                    and automation scripts to strengthen programming logic and algorithmic thinking.</li>
+                <li><strong>Gender Prediction Using Sound:</strong> Built a machine learning application for gender
+                    prediction from voice recordings using Python, audio feature extraction, data preprocessing, and
+                    classification techniques.</li>
+                <li><strong>Minimal IP Geolocation Tracker:</strong> Developed an application to retrieve IP-based
+                    location data using REST APIs.</li>
+                <li><strong>Machine Learning-Based Sentiment Analysis in English Literature:</strong> Developed a
+                    Python-based NLP model to classify sentiment in English text.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul class="bullet-list">
+                <li><strong>Datacom</strong> – Software Development</li>
+                <li><strong>Skyscanner</strong> – Front-End Software Engineering</li>
+                <li><strong>Cisco</strong> – Modern AI</li>
+                <li><strong>Salesforce</strong> – Agentforce Certification</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Personal Skills</h2>
+            <ul class="bullet-list">
+                <li>Strong analytical and logical thinking</li>
+                <li>Quick learner and adaptable to new technologies</li>
+                <li>Ability to work under pressure</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Achievements</h2>
+            <ul class="bullet-list">
+                <li>Solved 250+ coding problems on LeetCode, HackerRank, and CodeChef.</li>
+                <li>Participated in hackathons and coding competitions, demonstrating strong problem-solving and
+                    teamwork.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Extra-Curricular Activities</h2>
+            <ul class="bullet-list">
+                <li>Participated in technical workshops and seminars related to Web Development and modern web
+                    technologies.</li>
+                <li>Practiced coding regularly to improve problem-solving skills.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
